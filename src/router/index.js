@@ -10,10 +10,11 @@ export default new Router({
     {
       path: '/',
       name: 'home',
+      redirect: '/about/material-dark',
       component: Home
     },
     {
-      path: '/resume/:resumeid',
+      path: '/about/:resumeid',
       name: 'resume',
       component: Resume
     }

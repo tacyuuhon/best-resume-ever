@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <a :href="'tel:'+person.contact.phone">
+    <a :href="'tel:'+person.contact.phone" v-if="person.contact.phone">
       <div class="item">
         <div class="icon">
           <i class="material-icons">phone</i>
@@ -103,7 +103,7 @@
       <div class="block-helper"></div>
       <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
-        <p class="info">
+        <p class="info" v-html="experience.description">
           {{experience.description}}
         </p>
     </div>
@@ -153,7 +153,7 @@ a {
   h2 {
     text-transform:uppercase;
     display:block;
-    font-size:1.17em;
+    font-size:2.17em;
     -webkit-margin-before:1em;
     -webkit-margin-after:1em;
     -webkit-margin-start:0;
@@ -254,7 +254,7 @@ h4 {
   opacity:1;
 }
 .rightCol {
-  width:63.5%;
+  width:75%;
   height:100%;
   float:right;
   display:flex;
@@ -332,7 +332,7 @@ h4 {
   }
 }
 .leftCol {
-  width:35%;
+  width:24%;
   height:100%;
   float:left;
   padding:0;

@@ -27,7 +27,7 @@
 
         <div class="row">
           <span class="time-period"> {{experience.timeperiod}}</span>
-          <span class="job-description">, {{experience.description}} </span>
+          <span class="job-description" v-html="experience.description">, {{experience.description}} </span>
         </div>
       </div>
     </div>

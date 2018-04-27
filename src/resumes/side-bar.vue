@@ -57,7 +57,7 @@
                           <span class="time-period"> {{experience.timeperiod}}</span>
                       </div>
                       <div class="row">
-                          <span class="job-description"> {{experience.description}} </span>
+                          <span class="job-description" v-html="experience.description"> {{experience.description}} </span>
                       </div>
                   </div>
           </div>
@@ -84,7 +84,6 @@
       </div>
   </div>
 
-  </div>
 </template>
 
 <script>

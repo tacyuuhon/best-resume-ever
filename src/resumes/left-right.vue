@@ -18,7 +18,7 @@
         <span class="company"> {{experience.company}} </span>
         <span class="job-title"> {{experience.position}} </span>
         <span class="time-period"> {{experience.timeperiod}}</span>
-        <span class="job-description"> {{experience.description}} </span>
+        <span class="job-description" v-html="experience.description"> {{experience.description}} </span>
       </div>
     </div>
     <div class="contact">
